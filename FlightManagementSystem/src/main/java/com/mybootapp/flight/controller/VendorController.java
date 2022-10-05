@@ -72,9 +72,13 @@ public class VendorController {
 		return list;
 	}
 	
-	@PostMapping("/insert/booking")
+	@PostMapping("insert/passenger")
 	public Passenger insertBooking(@RequestBody Passenger passenger) {
 		return bookingRepository.save(passenger);
+	}
+	@GetMapping("get/all/passengers")
+	public List<Passenger> getAllBookings() {
+		return bookingRepository.findAll();
 	}
 	 
 }

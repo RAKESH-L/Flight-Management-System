@@ -17,106 +17,162 @@ public class Passenger {
 	private Long id;
 
 	private String name;
+	private String contact;
+	private String email;
+	private String flightName;
 	private String source;
 	private String destination;
 	private String depDate;
 	private String depTime;
 	private String arvDate;
 	private String arvTime;
-	private double priceAdult;
-	private double priceChild;
-	private int seats;
-	public Passenger(Long id, String name, String source, String destination, String depDate, String depTime,
-			String arvDate, String arvTime, double priceAdult, double priceChild, int seats) {
+	private Long adult;
+	private Long child;
+	private double price;
+
+	public Passenger(Long id, String name, String contact, String email, String flightName, String source,
+			String destination, String depDate, String depTime, String arvDate, String arvTime, Long adult, Long child,
+			double price) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.contact = contact;
+		this.email = email;
+		this.flightName = flightName;
 		this.source = source;
 		this.destination = destination;
 		this.depDate = depDate;
 		this.depTime = depTime;
 		this.arvDate = arvDate;
 		this.arvTime = arvTime;
-		this.priceAdult = priceAdult;
-		this.priceChild = priceChild;
-		this.seats = seats;
+		this.adult = adult;
+		this.child = child;
+		this.price = price;
 	}
+
 	public Passenger() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFlightName() {
+		return flightName;
+	}
+
+	public void setFlightName(String flightName) {
+		this.flightName = flightName;
+	}
+
 	public String getSource() {
 		return source;
 	}
+
 	public void setSource(String source) {
 		this.source = source;
 	}
+
 	public String getDestination() {
 		return destination;
 	}
+
 	public void setDestination(String destination) {
 		this.destination = destination;
 	}
+
 	public String getDepDate() {
 		return depDate;
 	}
+
 	public void setDepDate(String depDate) {
 		this.depDate = depDate;
 	}
+
 	public String getDepTime() {
 		return depTime;
 	}
+
 	public void setDepTime(String depTime) {
 		this.depTime = depTime;
 	}
+
 	public String getArvDate() {
 		return arvDate;
 	}
+
 	public void setArvDate(String arvDate) {
 		this.arvDate = arvDate;
 	}
+
 	public String getArvTime() {
 		return arvTime;
 	}
+
 	public void setArvTime(String arvTime) {
 		this.arvTime = arvTime;
 	}
-	public double getPriceAdult() {
-		return priceAdult;
+
+	public Long getAdult() {
+		return adult;
 	}
-	public void setPriceAdult(double priceAdult) {
-		this.priceAdult = priceAdult;
+
+	public void setAdult(Long adult) {
+		this.adult = adult;
 	}
-	public double getPriceChild() {
-		return priceChild;
+
+	public Long getChild() {
+		return child;
 	}
-	public void setPriceChild(double priceChild) {
-		this.priceChild = priceChild;
+
+	public void setChild(Long child) {
+		this.child = child;
 	}
-	public int getSeats() {
-		return seats;
+
+	public double getPrice() {
+		return price;
 	}
-	public void setSeats(int seats) {
-		this.seats = seats;
+
+	public void setPrice(double price) {
+		this.price = price;
 	}
+
 	@Override
 	public String toString() {
-		return "Passenger [id=" + id + ", name=" + name + ", source=" + source + ", destination=" + destination
-				+ ", depDate=" + depDate + ", depTime=" + depTime + ", arvDate=" + arvDate + ", arvTime=" + arvTime
-				+ ", priceAdult=" + priceAdult + ", priceChild=" + priceChild + ", seats=" + seats + "]";
+		return "Passenger [id=" + id + ", name=" + name + ", contact=" + contact + ", email=" + email + ", flightName="
+				+ flightName + ", source=" + source + ", destination=" + destination + ", depDate=" + depDate
+				+ ", depTime=" + depTime + ", arvDate=" + arvDate + ", arvTime=" + arvTime + ", adult=" + adult
+				+ ", child=" + child + ", price=" + price + "]";
 	}
-	
-	
+
 }

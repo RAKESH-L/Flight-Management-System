@@ -12,6 +12,7 @@ import { BookingConfirmationComponent } from './components/booking-confirmation/
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
 import { FlightSearchComponent } from './components/flight-search/flight-search.component';
+import { BookingsComponent } from './components/bookings/bookings.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FlightSearchComponent } from './components/flight-search/flight-search.
     AllVendorComponent,
     BookingConfirmationComponent,
     PageNotFoundComponent,
-    FlightSearchComponent
+    FlightSearchComponent,
+    BookingsComponent
   ],
   imports: [
     BrowserModule,

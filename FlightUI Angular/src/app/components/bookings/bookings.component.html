@@ -1,0 +1,42 @@
+<!-- <p>bookings works!</p>
+<div *ngFor="let p of bookingArray">
+{{p.name}}
+</div> -->
+<div class="table_responsive" >
+    <table class="table table-bordered" >
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>CONTACT</th>
+                <th>EMAIL</th>
+                <th>AIRLINES</th>
+                <th>SOURCE</th>
+                <th>DESTINATION</th>
+                <th>DEPATURE DATE</th>
+                <th>DEPARTURE TIME</th>
+                <th>ARRIVAL TIME</th>
+                <th>FARE/ADULT</th>
+                <th>FARE/CHILD</th>
+                <th>TOTAL PRICE</th>
+            </tr>
+        </thead>
+    <tbody *ngFor="let p of bookingArray">
+        <tr>
+            <td>{{p.name}}</td>
+            <td>{{p.contact}}</td>
+            <td>{{p.email}}</td>
+            <td>{{p.flightName}}</td>
+            <td>{{p.source}}</td>
+            <td>{{p.destination}}</td>
+            <td>{{p.depDate}}</td>
+            <td>{{p.depTime}}</td>
+            <td>{{p.arvDate}}</td>
+            <td>{{p.adult}}</td>
+            <td>{{p.child}}</td>
+            <td>{{p.price}}</td>
+
+    <br />
+    </tr>
+    </tbody>
+    </table>
+</div>

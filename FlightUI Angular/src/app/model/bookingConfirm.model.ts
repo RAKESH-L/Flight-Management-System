@@ -1,13 +1,16 @@
 export class Booking{
-    id:number;
+    id?:number;
     name: string;
+    contact: string;
+    email: string;
+    flightName: string;
     source: string;
     destination: string;
     depDate: string;
     depTime: string;
     arvDate: string;
     arvTime: string;
-    priceAdult: number;
-    priceChild: number;
-    seats: number;
+    adult: number;
+    child: number;
+    price: number;
 }

@@ -184,7 +184,7 @@ html, body {
         padding: 7px 10px;
         font-weight: bold;
         border-radius: 3px;
-        transtion: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
     
     .action_btn>a:nth-child(1){

@@ -1,5 +1,6 @@
 <div id="container">  
   <div class="product-details">
+    <form #fareForm="ngForm" (submit)="onFormSubmit(fareForm)">
     <h1>BookMyFlight</h1><br>
     <br>
       <label>Name: </label><br>
@@ -11,24 +12,21 @@
     
       <label>Fare/Adult :</label>{{flightDataA.priceAdult}}&nbsp;&nbsp;
       <label>Fare/Child :</label>{{flightDataA.priceChild}}<br><br>
-
-      <form #fareForm="ngForm" (change)="change(fareForm)">        <!-- (change)="change(fareForm) -->
+      <div  (change)="change(fareForm)">
         <label>No.of.Adults :</label>
         <input type="number" name="no_of_adult" ngModel #no_of_adult="ngModel"><br><br>
         <label>No.of.Children :</label>
         <input type="number" name="no_of_children" ngModel #no_of_children="ngModel"><br /><br>
-        <!-- <label>Total Fare :</label> -->
-      </form>
-  
+    </div>
       <div class="control">
-        <button class="btn">
+        <button class="btn" type="submit">
         <span class="price">{{sum}}</span>
         <span class="shopping-cart">{{sum}}<i aria-hidden="true"></i></span>
         <span class="buy">Book Now</span>
       </button>
     </div>
+  </form>
   </div>
-  
   <div class="product-image">
     
     <img src="assets/image/flight.jpg" alt="">

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AllVendorComponent } from './components/all-vendor/all-vendor.component';
 import { BookingConfirmationComponent } from './components/booking-confirmation/booking-confirmation.component';
+import { BookingsComponent } from './components/bookings/bookings.component';
 import { FlightSearchComponent } from './components/flight-search/flight-search.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'all-vendor', component: AllVendorComponent},
   {path:'booking-confirmation', component: BookingConfirmationComponent},
   {path:'flight-search', component: FlightSearchComponent},
+  {path:'bookings', component:BookingsComponent},
   {path:'**', component: PageNotFoundComponent}
 ];
 
